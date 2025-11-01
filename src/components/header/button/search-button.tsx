@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import { SearchSvgTwo } from "@/components/svg";
-import SearchPopup from "@/components/modal/search-popup";
+// import SearchPopup from "@/components/modal/search-popup";
 
 type SearchButtonProps = {
    icon?: React.ReactNode;
@@ -20,7 +20,7 @@ export default function SearchButton({ icon }: SearchButtonProps) {
             {icon || <SearchSvgTwo/>}
          </button>
 
-         <SearchPopup isSearchOpen={isSearchOpen} onHide={handleSearchToggle} />
+         {/* <SearchPopup isSearchOpen={isSearchOpen} onHide={handleSearchToggle} /> */}
 
       </>
    );
