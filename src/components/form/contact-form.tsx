@@ -4,7 +4,6 @@ import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import ErrMsg from "../err-msg";
 
-
 type Inputs = {
   firstName: string;
   lastName: string;
@@ -80,7 +79,7 @@ export default function ContactForm() {
                 placeholder="Email"
                 className="ps-5 uniform-field"
               />
-              {errors.email && <ErrMsg msg={errors.email.message} />}
+              {errors.email && <ErrMsg msg={errors.email.message ?? ""} />}
             </div>
           </div>
 
@@ -94,7 +93,9 @@ export default function ContactForm() {
                 placeholder="First Name"
                 className="ps-5 uniform-field"
               />
-              {errors.firstName && <ErrMsg msg={errors.firstName.message} />}
+              {errors.firstName && (
+                <ErrMsg msg={errors.firstName.message ?? ""} />
+              )}
             </div>
           </div>
 
@@ -108,7 +109,7 @@ export default function ContactForm() {
                 placeholder="Last Name"
                 className="ps-5 uniform-field"
               />
-              {errors.lastName && <ErrMsg msg={errors.lastName.message} />}
+              {errors.lastName && <ErrMsg msg={errors.lastName.message ?? ""} />}
             </div>
           </div>
 
@@ -128,7 +129,7 @@ export default function ContactForm() {
                 <option value="sales">Sales</option>
               </select>
               {errors.inquiryReason && (
-                <ErrMsg msg={errors.inquiryReason.message} />
+                <ErrMsg msg={errors.inquiryReason.message ?? ""} />
               )}
             </div>
           </div>
@@ -149,7 +150,7 @@ export default function ContactForm() {
                 <option value="spanish">Spanish</option>
               </select>
               {errors.preferredLanguage && (
-                <ErrMsg msg={errors.preferredLanguage.message} />
+                <ErrMsg msg={errors.preferredLanguage.message ?? ""} />
               )}
             </div>
           </div>
@@ -183,7 +184,7 @@ export default function ContactForm() {
                 rows={4}
               ></textarea>
               {errors.requestDetails && (
-                <ErrMsg msg={errors.requestDetails.message} />
+                <ErrMsg msg={errors.requestDetails.message ?? ""} />
               )}
             </div>
           </div>
@@ -205,7 +206,7 @@ export default function ContactForm() {
                 <option value="india">India</option>
               </select>
             </div>
-            {errors.country && <ErrMsg msg={errors.country.message} />}
+            {errors.country && <ErrMsg msg={errors.country.message ?? ""} />}
           </div>
 
           {/* Business Address */}
@@ -288,7 +289,7 @@ export default function ContactForm() {
         {/* reCAPTCHA */}
         <div className="mt-4">
           <ReCAPTCHA
-            sitekey="6LcS5usrAAAAAP5BQiBQzD3jTPPvmba6ldHrIPH3" // 🔑 Replace this with your actual site key
+            sitekey="6LcS5usrAAAAAP5BQiBQzD3jTPPvmba6ldHrIPH3"
             onChange={handleRecaptchaChange}
           />
         </div>
