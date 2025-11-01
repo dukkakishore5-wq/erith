@@ -22,7 +22,7 @@ export default function HeaderSeven({ inner, transparent }: HeaderSevenProps) {
     <>
       <header
         className={`header-area p-relative ${
-          transparent ? "tp-header-transparent" : "tp-header-white"
+          transparent ? "tp-header-white" : "tp-header-white"
         }`}
       >
         {/* header top start */}
