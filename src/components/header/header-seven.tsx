@@ -14,11 +14,11 @@ type HeaderSevenProps = {
   inner?: boolean;
 };
 
-export default function HeaderOne({ inner }) {
+export default function HeaderOne({ inner }: HeaderSevenProps) {
   return (
     <>
       <header className="header-area tp-header-white p-relative">
-        {/* header top start*/}
+        {/* header top start */}
         <HeaderTopArea />
         {/* header top end */}
 
@@ -41,31 +41,28 @@ export default function HeaderOne({ inner }) {
                       priority
                     />
                   </Link>
-                  {inner}
+                  {inner && <span style={{ display: "none" }}></span>}
                 </div>
               </div>
+
               <div className="col-xxl-8 col-xl-7 d-none d-xl-block">
                 <div className="main-menu" style={{ marginLeft: "-20px" }}>
-                  {/* nav menus start */}
                   <NavMenus />
-                  {/* nav menus end */}
                 </div>
               </div>
 
               <div className="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-contact d-flex align-items-center justify-content-end">
-                  {/* Search bar */}
-                  <div className=" mr-3">
+                  <div className="mr-3">
                     <SearchButton icon={<SearchSvg />} />
                   </div>
 
-                  {/* Contact Us button */}
                   <div className="tp-header-btn d-none d-md-block ml-30">
                     <Link
                       href="/contact"
                       style={{
                         backgroundColor: "#f4d100",
-                        color: "#000", // black text
+                        color: "#000",
                         padding: "8px 18px",
                         borderRadius: "4px",
                         textDecoration: "none",
@@ -77,7 +74,6 @@ export default function HeaderOne({ inner }) {
                     </Link>
                   </div>
 
-                  {/* Mobile menu button */}
                   <div className="tp-header-bar d-xl-none ml-30">
                     <OffcanvasButton />
                   </div>
@@ -88,9 +84,7 @@ export default function HeaderOne({ inner }) {
         </HeaderStickyWrapper>
       </header>
 
-      {/* mobile offcanvas */}
       <div id="offcanvas-sidebar" />
-      {/* mobile offcanvas */}
     </>
   );
 }
