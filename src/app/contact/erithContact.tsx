@@ -45,7 +45,7 @@ export function ContactSection() {
   // const { sectionHeading, contactInfo } = contactSectionData;
   return (
     <section className="section-padding-primary">
-      <Container>
+      {/* <Container>
         <div className="flex flex-col gap-[50px] md:flex-row">
           <div className="md:w-1/2 lg:w-2/3">
             <div className="mb-30px">
@@ -92,7 +92,7 @@ export function ContactSection() {
             </ul>
           </div>
         </div>
-      </Container>
+      </Container> */}
     </section>
   );
 }
