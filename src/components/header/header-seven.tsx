@@ -10,14 +10,21 @@ import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper"
 import SearchButton from "./button/search-button";
 import OffcanvasButton from "./button/offcanvas-btn";
 
+// ✅ Added transparent prop since Layout passes it
 type HeaderSevenProps = {
   inner?: boolean;
+  transparent?: boolean;
 };
 
-export default function HeaderOne({ inner }: HeaderSevenProps) {
+// ✅ Renamed to match your import in Layout.tsx
+export default function HeaderSeven({ inner, transparent }: HeaderSevenProps) {
   return (
     <>
-      <header className="header-area tp-header-white p-relative">
+      <header
+        className={`header-area p-relative ${
+          transparent ? "tp-header-transparent" : "tp-header-white"
+        }`}
+      >
         {/* header top start */}
         <HeaderTopArea />
         {/* header top end */}
@@ -25,6 +32,7 @@ export default function HeaderOne({ inner }: HeaderSevenProps) {
         <HeaderStickyWrapper>
           <div className="container">
             <div className="row align-items-center">
+              {/* Logo */}
               <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-logo-1 tp-header-logo">
                   <Link href="/">
@@ -45,18 +53,22 @@ export default function HeaderOne({ inner }: HeaderSevenProps) {
                 </div>
               </div>
 
+              {/* Navigation */}
               <div className="col-xxl-8 col-xl-7 d-none d-xl-block">
                 <div className="main-menu" style={{ marginLeft: "-20px" }}>
                   <NavMenus />
                 </div>
               </div>
 
+              {/* Right-side actions */}
               <div className="col-xxl-2 col-xl-3 col-lg-6 col-md-6 col-6">
                 <div className="tp-header-contact d-flex align-items-center justify-content-end">
+                  {/* Search */}
                   <div className="mr-3">
                     <SearchButton icon={<SearchSvg />} />
                   </div>
 
+                  {/* Button */}
                   <div className="tp-header-btn d-none d-md-block ml-30">
                     <Link
                       href="/contact"
@@ -74,6 +86,7 @@ export default function HeaderOne({ inner }: HeaderSevenProps) {
                     </Link>
                   </div>
 
+                  {/* Mobile Menu */}
                   <div className="tp-header-bar d-xl-none ml-30">
                     <OffcanvasButton />
                   </div>
