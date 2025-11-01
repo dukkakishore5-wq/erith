@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import mission_thumb_1 from "@/assets/img/our-mission/thumb11.jpg";
+// import mission_thumb_1 from "@/assets/img/our-mission/thumb11.jpg";
 import mission_thumb_2 from "@/assets/img/our-mission/bearings.png";
 import mission_thumb_3 from "@/assets/img/our-mission/Gala_night_group_photo.jpg";
-import ContactForm from "@/components/form/contact-form";
+// import ContactForm from "@/components/form/contact-form";
 
 // import mission_thumb_2 from "@/assets/img/our-mission/mission-item-2.jpg";
 // import mission_thumb_3 from "@/assets/img/our-mission/mission-item-3.jpg";

@@ -4,10 +4,10 @@ import Link from "next/link";
 import SearchButton from "./button/search-button";
 import NavbarMenusTwo from "./navbar/navbar-menus-2";
 import logo from "@/assets/img/logo/erith_global.png";
-import ProfileDropdown from "./header-profile/profile-dropdown";
-import HeaderCategoryArea from "./header-category/header-category-area";
+// import ProfileDropdown from "./header-profile/profile-dropdown";
+// import HeaderCategoryArea from "./header-category/header-category-area";
 import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper";
-import CartButton from "./button/cart-button";
+// import CartButton from "./button/cart-button";
 import OffcanvasButton from "./button/offcanvas-btn";
 import HeaderTopArea from "./header-top/header-top-area";
 

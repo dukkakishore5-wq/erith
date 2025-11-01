@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { HomeSvg } from "../svg";
+// import Link from "next/link";
+// import { HomeSvg } from "../svg";
 
 type IProps = {
     title: string;
@@ -26,7 +26,7 @@ export default function BreadcrumbTwo({ title, subtitle,admission }: IProps) {
                     <HomeSvg/>
                   </Link> */}
                 </span>
-                {/* {admission && <span className="white">Admission</span>} */}
+                {admission && <span className="white"></span>}
                 <span className="white">{subtitle}</span>
               </div>
               <h3 className="tp-breadcrumb__title color">

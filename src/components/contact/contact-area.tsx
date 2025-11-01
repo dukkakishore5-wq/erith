@@ -1,6 +1,6 @@
 import ContactForm from "../form/contact-form";
-import Link from "next/link";
-import { HomeSvg } from "../svg";
+// import Link from "next/link";
+// import { HomeSvg } from "../svg";
 
 type IProps = {
   title: string;
@@ -28,6 +28,8 @@ export default function ContactArea({ title, subtitle, admission }: IProps) {
                   </Link>
                 </span> */}
                   {admission && <span className="white">Admission</span>}
+                  {title && <span className="white"></span>}
+                  {subtitle && <span className="white"></span>}
                   <h3 className="tp-breadcrumb__title color">Get In Touch</h3>
                   <span className="white">
                     We Are Here To Answer Any Questions You May Have

@@ -1,6 +1,6 @@
-import { RightArrowTwo } from "@/components/svg";
-import Link from "next/link";
-import HeroSection from "@/components/slider/Heroslider";
+// import { RightArrowTwo } from "@/components/svg";
+// import Link from "next/link";
+// import HeroSection from "@/components/slider/Heroslider";
 
 type IProps = {
   title: string;
@@ -26,6 +26,9 @@ export default function AboutBanner({ title, subtitle, admission }: IProps) {
                     <HomeSvg/>
                   </Link>
                 </span> */}
+                {title}
+               
+                {subtitle}
                   {admission && <span className="white">Admission</span>}
                   <h5 className="tp-breadcrumb__title color">
                     About us
