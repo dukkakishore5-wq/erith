@@ -25,7 +25,7 @@ export default function AboutPage() {
       {/* <HeaderTopArea />  */}
 
       {/* about banner area start */}
-      <AboutBanner />
+      <AboutBanner/>
       {/* about banner area end */}
       <Abouterith/>
 
