@@ -1,7 +1,11 @@
 "use client";
 import CountUp from "react-countup";
 
-const Counter = ({ end }) => {
+type CounterProps = {
+  end: number;
+};
+
+const Counter = ({ end }: CounterProps) => {
   return (
     <>
       <CountUp end={end} enableScrollSpy />
