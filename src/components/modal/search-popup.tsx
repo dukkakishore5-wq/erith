@@ -1,6 +1,6 @@
 // import Image from "next/image";
 // import { CloseThreeSvg, SearchSvg, StarThree } from "../svg";
-import { online_courses_data } from "@/data/course-data";
+// import { online_courses_data } from "@/data/course-data";
 // import { formatPrice } from "@/lib/format-price";
 // import Link from "next/link";
 

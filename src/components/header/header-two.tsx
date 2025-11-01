@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SearchButton from "./button/search-button";
+// import SearchButton from "./button/search-button";
 import NavbarMenusTwo from "./navbar/navbar-menus-2";
 import logo from "@/assets/img/logo/erith_global.png";
 // import ProfileDropdown from "./header-profile/profile-dropdown";

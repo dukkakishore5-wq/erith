@@ -1,7 +1,7 @@
 // import Image from "next/image";
-import icon_1 from "@/assets/img/about/icon1.png";
-import icon_2 from "@/assets/img/about/icon2.png";
-import icon_3 from "@/assets/img/about/icon3.png";
+// import icon_1 from "@/assets/img/about/icon1.png";
+// import icon_2 from "@/assets/img/about/icon2.png";
+// import icon_3 from "@/assets/img/about/icon3.png";
 
 // const tutorData = [
 //   { id: 1, icon: icon_1, title: "Reliable & quality products", delay: ".3s" },

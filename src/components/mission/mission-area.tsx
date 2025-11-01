@@ -172,7 +172,7 @@ export default function MissionArea({ top_cls = "grey-bg pt-30" }: IProps) {
               <div className="tp-our-mission-heading">
                 <h3 className="tp-our-mission-title">Join Our Team</h3>
                 <p>
-                  Erith's extensively trained staff is knowledgeable in all
+                  Eriths extensively trained staff is knowledgeable in all
                   aspects of flow control technology and provide personal
                   attention to every customer.
                 </p>
