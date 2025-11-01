@@ -1,19 +1,28 @@
 import Link from "next/link";
 import React from "react";
 
-const SingleServices1 = ({ data }) => {
+type ServiceData = {
+  id: string | number;
+  icon: string;
+  title: string;
+  text: string;
+};
+
+interface SingleServices1Props {
+  data: ServiceData;
+}
+
+const SingleServices1: React.FC<SingleServices1Props> = ({ data }) => {
   const { id, icon, title, text } = data;
 
   return (
-    <>
-      <div className="services-style-one">
-        <i className={icon}></i>
-        <h4>
-          <Link href={`/services-details/${id}`}>{title}</Link>
-        </h4>
-        <p>{text}</p>
-      </div>
-    </>
+    <div className="services-style-one">
+      <i className={icon}></i>
+      <h4>
+        <Link href={`/services-details/${id}`}>{title}</Link>
+      </h4>
+      <p>{text}</p>
+    </div>
   );
 };
 
