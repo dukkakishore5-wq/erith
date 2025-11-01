@@ -31,10 +31,10 @@ export default function EventAreaTwo() {
                       style={{ height: "auto" }}
                     />
                   </Link>
-                  <div className="tp-event-3-date">
+                  {/* <div className="tp-event-3-date">
                     <span>{item.date.day}</span>
                     <p>{item.date.month}</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="tp-event-3-content">
                   <h3 className="tp-event-3-title">
